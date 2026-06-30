@@ -3,7 +3,7 @@
 # ==============================
 # FIRST-TIME SETUP
 # ==============================
-init-app: prepare web
+init-app: prepare train web
 
 # ==============================
 # PREPARE
