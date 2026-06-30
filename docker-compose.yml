@@ -1,0 +1,44 @@
+services:
+
+    # ==============================
+    # TRAINER — entrena el LLM
+    # ==============================
+    llm-trainer:
+        build:
+            context: ./llm-trainer
+            dockerfile: Dockerfile
+        volumes:
+            - './llm-trainer:/app'
+        environment:
+            EPOCHS: '${EPOCHS:-50}'
+            BATCH_SIZE: '${BATCH_SIZE:-32}'
+            LEARNING_RATE: '${LEARNING_RATE:-3e-4}'
+            BLOCK_SIZE: '${BLOCK_SIZE:-64}'
+            N_EMBED: '${N_EMBED:-128}'
+            N_HEAD: '${N_HEAD:-4}'
+            N_LAYER: '${N_LAYER:-4}'
+            DROPOUT: '${DROPOUT:-0.1}'
+        networks:
+            - llm
+
+    # ==============================
+    # WEB — interfaz del LLM
+    # ==============================
+    llm-web:
+        build:
+            context: ./llm-trainer
+            dockerfile: Dockerfile
+        command: python app.py
+        ports:
+            - '${APP_PORT:-8080}:8080'
+        volumes:
+            - './llm-trainer:/app'
+        networks:
+            - llm
+        restart: unless-stopped
+
+networks:
+    llm:
+        driver: bridge
+
+volumes: {}

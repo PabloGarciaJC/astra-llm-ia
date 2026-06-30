@@ -1,0 +1,21 @@
+# Entorno
+.env
+
+# Modelo entrenado (archivo binario pesado)
+llm-trainer/output/model.pt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# Sistema
+.DS_Store
+*.swp
+*.swo

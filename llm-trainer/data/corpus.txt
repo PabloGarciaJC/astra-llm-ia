@@ -1,0 +1,49 @@
+La inteligencia artificial es una rama de la informática que busca crear sistemas capaces de realizar tareas que normalmente requieren inteligencia humana. Estas tareas incluyen el aprendizaje, el razonamiento, la resolución de problemas, la comprensión del lenguaje natural y la percepción.
+
+El aprendizaje automático es un subconjunto de la inteligencia artificial que permite a las máquinas aprender a partir de datos sin ser programadas explícitamente. Los modelos de aprendizaje automático identifican patrones en los datos y utilizan esos patrones para hacer predicciones o tomar decisiones.
+
+Las redes neuronales son modelos computacionales inspirados en el cerebro humano. Están formadas por capas de nodos interconectados que procesan información. Cada nodo recibe entradas, aplica una función matemática y produce una salida que se transmite a los nodos siguientes.
+
+El aprendizaje profundo utiliza redes neuronales con muchas capas para aprender representaciones complejas de los datos. Gracias al aprendizaje profundo, los sistemas de inteligencia artificial han logrado avances extraordinarios en reconocimiento de imágenes, traducción de idiomas y generación de texto.
+
+Los transformers son una arquitectura de red neuronal que revolucionó el procesamiento del lenguaje natural. Usan mecanismos de atención para capturar relaciones entre palabras en una secuencia, sin importar la distancia entre ellas. Esta capacidad les permite comprender el contexto de manera mucho más eficaz que los modelos anteriores.
+
+El mecanismo de atención permite al modelo enfocarse en las partes más relevantes de la entrada cuando genera una salida. En lugar de procesar la información de forma secuencial, los transformers analizan toda la secuencia a la vez y aprenden qué partes son más importantes para cada tarea.
+
+El preentrenamiento consiste en entrenar un modelo con grandes cantidades de texto para que aprenda el lenguaje en general. Después, mediante el fine-tuning, se ajusta el modelo con datos específicos para una tarea concreta, como responder preguntas o traducir textos.
+
+Los modelos de lenguaje grandes, conocidos como LLM, son sistemas entrenados con miles de millones de palabras. Son capaces de generar texto coherente, responder preguntas, resumir documentos y realizar muchas otras tareas lingüísticas con una calidad impresionante.
+
+El entrenamiento de un modelo de lenguaje requiere enormes recursos computacionales. Se usan miles de procesadores gráficos trabajando en paralelo durante semanas o meses. Los datos de entrenamiento incluyen libros, artículos, código fuente, sitios web y muchos otros tipos de texto.
+
+La generación de texto es el proceso por el cual un modelo de lenguaje produce texto nuevo. El modelo recibe un contexto inicial y predice el siguiente carácter o palabra más probable. Repitiendo este proceso, construye frases y párrafos completos con coherencia y fluidez.
+
+El vocabulario de un modelo de lenguaje define el conjunto de unidades mínimas que puede reconocer y generar. Puede ser a nivel de caracteres, subpalabras o palabras completas. Un vocabulario más grande permite mayor precisión, pero también requiere más memoria y cómputo.
+
+La función de pérdida mide qué tan equivocado está el modelo en sus predicciones. Durante el entrenamiento, el objetivo es reducir esta pérdida ajustando los pesos del modelo mediante el algoritmo de retropropagación y optimizadores como Adam o SGD.
+
+La retropropagación es el algoritmo que calcula el gradiente del error con respecto a cada peso del modelo. Usando estos gradientes, el optimizador actualiza los pesos en la dirección que reduce el error. Este proceso se repite miles de veces hasta que el modelo aprende a hacer predicciones precisas.
+
+Los embeddings son representaciones vectoriales de palabras o caracteres. Transforman símbolos discretos en vectores continuos de números. Palabras con significados similares tienen embeddings cercanos en el espacio vectorial, lo que permite al modelo capturar relaciones semánticas.
+
+La atención multi-cabezal permite al modelo atender a diferentes aspectos del contexto simultáneamente. Cada cabezal aprende a enfocarse en relaciones distintas entre los tokens. Los resultados de todos los cabezales se combinan para producir una representación rica y completa de la información.
+
+El overfitting ocurre cuando un modelo aprende demasiado bien los datos de entrenamiento y pierde capacidad de generalizar a datos nuevos. Para evitarlo se usan técnicas como el dropout, la regularización y el uso de conjuntos de validación independientes.
+
+El dropout es una técnica de regularización que desactiva aleatoriamente neuronas durante el entrenamiento. Esto obliga al modelo a aprender representaciones más robustas y redundantes, mejorando su capacidad para generalizar a datos no vistos.
+
+La normalización por capas estabiliza el entrenamiento de redes neuronales profundas. Normaliza las activaciones de cada capa para que tengan media cero y varianza unitaria. Esto acelera la convergencia y permite entrenar modelos más grandes y profundos.
+
+El tamaño del lote determina cuántos ejemplos se procesan juntos en cada paso del entrenamiento. Lotes más grandes ofrecen estimaciones de gradiente más estables, pero requieren más memoria. Lotes más pequeños introducen más ruido, lo que puede ayudar al modelo a escapar de mínimos locales.
+
+La tasa de aprendizaje controla qué tan rápido se actualizan los pesos del modelo. Una tasa demasiado alta puede hacer que el modelo diverja. Una tasa demasiado baja hace que el entrenamiento sea muy lento. Los planificadores de tasa de aprendizaje ajustan este valor durante el entrenamiento para obtener mejores resultados.
+
+Astra es una asistente de inteligencia artificial creada por Pablo. Responde siempre en español, de forma clara, amable y directa. Está diseñada para ayudar a las personas a entender conceptos complejos de manera sencilla y accesible.
+
+Pablo es un desarrollador apasionado por la inteligencia artificial y las tecnologías de código abierto. Crea proyectos que permiten a las personas ejecutar modelos de lenguaje en sus propios equipos, sin depender de servicios externos ni pagar por cada consulta.
+
+La privacidad es un valor fundamental en el diseño de sistemas de inteligencia artificial locales. Cuando los modelos se ejecutan en el propio equipo del usuario, los datos nunca salen del dispositivo. Esto garantiza que las conversaciones sean completamente privadas y seguras.
+
+Docker es una plataforma de contenedores que permite empaquetar aplicaciones junto con todas sus dependencias. Esto garantiza que el software funcione de la misma manera en cualquier entorno, simplificando enormemente el despliegue y la gestión de sistemas complejos.
+
+Ollama es una herramienta que facilita la ejecución de modelos de lenguaje grandes en equipos locales. Descarga y gestiona los modelos automáticamente, y expone una API compatible con los estándares de la industria para integrarlos fácilmente en cualquier aplicación.
