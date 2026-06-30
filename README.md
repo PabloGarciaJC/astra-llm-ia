@@ -8,7 +8,8 @@ Stack completo para construir y entrenar tu propio modelo de lenguaje (LLM) desd
 
 Un LLM moderno se compone de varias capas. Aquí se explica qué tiene este proyecto en cada una:
 
-### 🧠 1. Núcleo — Deep Learning + Transformers
+### 1. Núcleo — Deep Learning + Transformers
+
 **Lo que usa este proyecto:** implementación completa del Transformer escrita desde cero en PyTorch.
 
 Sin esto no hay LLM. Este proyecto lo implementa manualmente en `train.py`:
@@ -43,7 +44,8 @@ Texto generado
 
 ---
 
-### ⚙️ 2. Framework de entrenamiento — PyTorch
+### 2. Framework de entrenamiento — PyTorch
+
 **Lo que usa este proyecto:** PyTorch como único framework.
 
 | Herramienta PyTorch | Uso en el proyecto |
@@ -58,7 +60,8 @@ Texto generado
 
 ---
 
-### 💻 3. Hardware — CPU o GPU (una sola máquina)
+### 3. Hardware — CPU o GPU (una sola máquina)
+
 **Lo que usa este proyecto:** una sola máquina con CPU o GPU.
 
 ```python
@@ -71,7 +74,8 @@ El entrenamiento se ejecuta automáticamente en GPU si está disponible, o en CP
 
 ---
 
-### 📊 4. Datos — Corpus propio en texto plano
+### 4. Datos — Corpus propio en texto plano
+
 **Lo que usa este proyecto:** un único archivo de texto como corpus de entrenamiento.
 
 - **Archivo:** `llm-trainer/data/corpus.txt`
@@ -84,7 +88,8 @@ El modelo aprende únicamente del texto que tú le pongas en `corpus.txt`. A dif
 
 ---
 
-### 🧩 5. Técnicas de entrenamiento — Preentrenamiento
+### 5. Técnicas de entrenamiento — Preentrenamiento
+
 **Lo que usa este proyecto:** solo preentrenamiento (desde cero).
 
 | Etapa | ¿Este proyecto la usa? | Descripción |
